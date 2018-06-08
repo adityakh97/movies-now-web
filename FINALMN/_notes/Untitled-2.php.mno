@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:Act_id;datatype:int,name:Act_Name;datatype:string,name:Act_Gender;datatype:string,name:Act_id;datatype:int,name:Mov_id;datatype:int,name:Role;datatype:string,name:Dir_id;datatype:int,name:Dir_Name;datatype:string,name:Dir_Phone;datatype:real,name:Mov_id;datatype:int,name:Mov_Title;datatype:string,name:Mov_Year;datatype:int,name:Mov_Lang;datatype:string,name:Mov_Desp;datatype:string,name:Dir_id;datatype:int,name:Mov_id;datatype:int,name:Rev_Stars;datatype:string" />
+	<infoitem key="UD_Recordset2" value="name:Act_id;datatype:int,name:Act_Name;datatype:string,name:Act_Gender;datatype:string,name:Act_id;datatype:int,name:Mov_id;datatype:int,name:Role;datatype:string,name:Dir_id;datatype:int,name:Dir_Name;datatype:string,name:Dir_Phone;datatype:real,name:Mov_id;datatype:int,name:Mov_Title;datatype:string,name:Mov_Year;datatype:int,name:Mov_Lang;datatype:string,name:Mov_Desp;datatype:string,name:Dir_id;datatype:int,name:Mov_id;datatype:int,name:Rev_Stars;datatype:string" />
+</info>

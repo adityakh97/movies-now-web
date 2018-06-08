@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:Mov_id;datatype:int,name:Mov_Title;datatype:string,name:Mov_Year;datatype:int,name:Mov_Lang;datatype:string,name:Mov_Desp;datatype:string,name:Dir_id;datatype:int" />
+</info>

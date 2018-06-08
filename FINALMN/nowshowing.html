@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MOVIESNOW</title>
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/camera.css">
+<!--[if !IE]>-->
+<link rel="stylesheet" href="css/blur.css">
+<!--<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/camera.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script>
+$(document).ready(function () {
+    jQuery('#camera_wrap').camera({
+        loader: false,
+        pagination: false,
+        thumbnails: false,
+        height: '48.82978723404255%',
+        caption: false,
+        navigation: true,
+        fx: 'mosaic'
+    });
+});
+$(document).ready(function () {
+    $().UItoTop({
+        easingType: 'easeOutQuart'
+    });
+});
+$(function () {
+    var $container = $('#ib-container'),
+        $articles = $container.children('article'),
+        timeout;
+    $articles.on('mouseenter', function (event) {
+        var $article = $(this);
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            if ($article.hasClass('active')) return false;
+            $articles.not($article.removeClass('blur').addClass('active'))
+                .removeClass('active')
+                .addClass('blur');
+        }, 65);
+    });
+    $container.on('mouseleave', function (event) {
+        clearTimeout(timeout);
+        $articles.removeClass('active blur');
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body class="page1">
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="menu_block">
+        <h1><a href="index.php"><img src="images/logo1.png" alt=""></a> </h1>
+        <nav>
+          <ul class="sf-menu">
+            <li class="current"><a href="logout.php">Home</a></li>
+            <li class="with_ul"><a href="nowshowing.html">NOW SHOWING</a>
+              <ul>
+                <li><a href="english.html">ENGLISH</a></li>
+                <li><a href="hindi.html">HINDI</a></li>
+                <li><a href="kannada.html">KANNADA</a></li>
+                <li><a href="telugu.html">TELUGU</a></li>
+              </ul>
+            </li>
+            <li><a href="commingsoon.html">COMMING SOON</a>
+             <ul>
+                <li><a href="english.html">ENGLISH</a></li>
+                <li><a href="hindi.html">HINDI</a></li>
+                <li><a href="kannada.html">KANNADA</a></li>
+                <li><a href="telugu.html">TELUGU</a></li>
+              </ul>
+            </li>
+           
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+      
+
+
+
+
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>
+<div class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <center><h3>NOW SHOWING </h3></center>
+    </div>
+    <div class="grid_4">
+      <div class="cwrap">
+        <div class="circle c111">
+          <div class="info">
+            <div class="title">Singham </div>
+            by Rohit shetty <br>
+            <a href="singham.php">Read More</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid_4">
+      <div class="cwrap">
+        <div class="circle c112">
+          <div class="info">
+            <div class="title">DDLJ </div>
+            by Aditya chopra <br>
+            <a href="ddlj.php">Read More</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid_4">
+      <div class="cwrap">
+        <div class="circle c113">
+          <div class="info">
+            <div class="title">bharjari</div>
+            by  Chethan kumar<br>
+            <a href="bharjari.php">Read More</a> </div>
+        </div>
+      </div>
+    </div>
+  
+      
+
+      <div class="grid_12">
+    </div>
+    <div class="grid_4">
+      <div class="cwrap">
+        <div class="circle c114">
+          <div class="info">
+            <div class="title">Tarak</div>
+            by  Santhosh Ananddram<br>
+            <a href="tarak.php">Read More</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid_4">
+      <div class="cwrap">
+        <div class="circle c115">
+          <div class="info">
+            <div class="title">Detective</div>
+            by  Mysskin<br>
+            <a href="detective.php">Read More</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid_4">
+      <div class="cwrap">
+        <div class="circle c116">
+          <div class="info">
+            <div class="title">Adirindi</div>
+            by Attee kumar <br>
+            <a href="adirindi.php">Read More</a> </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="grid_12">
+    </div>
+    <div class="grid_4">
+      <div class="cwrap">
+        <div class="circle c117">
+          <div class="info">
+            <div class="title">Let there be light</div>
+            by Kevin Sorba <br>
+            <a href="lettherebelight.php">Read More</a> </div>
+        </div>
+      </div>
+    </div>
+   
+
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container_12">
+    <div class="grid_12">
+     
+      <div class="copy"> MoviesNow & copy; 2017 | <a href="#">Privacy Policy</a> <br>
+      Design by: <a href="http://www.MoviesNow.com/">MoviesNow.com</a> </div>
+     
+</footer>
+</body>
+</html>
